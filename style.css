@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  grid-area: a;
+  display: inline;
+  padding-bottom: 0.3em;
+  font-family: playfair display, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 0;
+  font-size: 3em;
+}
+p {
+  display: inline;
+  grid-area: b;
+  padding-bottom: 1em;
+}
+button {
+  display: inline;
+  grid-area: c;
+  max-width: 80%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.7em;
+  border: 0.3em solid rgb(24, 24, 65);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.val {
+  display: inline;
+  grid-area: d;
+  padding: 0.7em;
+  font-family: playfair display, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: 0;
+}
+.box {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d";
+  margin: 5% 10%;
+  background-color: rgb(241, 227, 255);
+  padding: 5%;
+  color: rgb(24, 24, 65);
+  font-family: source sans pro, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: auto;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: rgb(24, 24, 65);
+  color: rgb(241, 227, 255);
+}
+body {
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
